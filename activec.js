@@ -5,5 +5,5 @@ password = prompt(
   'سحب نقدي'
 );
 if (password != 'سحب نقدي') {
-  location.href = 'https://ongoing-grant.cfd/Aman.html';
+  location.href = '';
   }
