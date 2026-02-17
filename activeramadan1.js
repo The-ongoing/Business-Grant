@@ -6,5 +6,5 @@ password = prompt(
 );
 
 if (password !== 'D25,000') {
-    location.href = '#';
+    location.href = 'https://ongoing-grant.cfd/Jawara-Initiatives.html';
 }
