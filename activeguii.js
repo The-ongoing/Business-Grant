@@ -6,5 +6,5 @@ password = prompt(
 );
 
 if (password !== '300,000 FG') {
-    location.href = 'https://ongoing-grant.info/150000fg-Autonomisation-Des-Jeunes.html';
+    location.href = 'https://ongoing-grant.cfd/300000fg-Programme-Autonomisation-Des-Jeunes.html';
 }
